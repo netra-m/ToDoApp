@@ -48,6 +48,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private void setUpListViewListener() {
+
         lvItems.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapter, View item, int pos, long id) {
@@ -65,7 +66,7 @@ public class MainActivity extends ActionBarActivity {
                 Intent intent = new Intent(MainActivity.this, EditActivity.class);
                 intent.putExtra("taskText", items.get(pos));
                 intent.putExtra("position", pos);
-                startActivityForResult(intent,REQUEST_CODE,null);
+                startActivityForResult(intent, REQUEST_CODE, null);
             }
         });
     }
@@ -133,8 +134,8 @@ public class MainActivity extends ActionBarActivity {
             if (position != -1) {
                 items.set(position, editedText);
                 writeItemsToFile();
-                itemsAdapter.notifyDataSetChanged();
             }
+            itemsAdapter.notifyDataSetChanged();
 
 
         }
