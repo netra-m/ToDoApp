@@ -15,4 +15,4 @@ Completed user stories :
 
 Walkthrough of all user stories : 
 
-![ScreenShot](https://github.com/netra-m/ToDoApp/todoAppDemo.gif)
+![ScreenShot](http://giphy.com/gifs/3xz2ByLdqAdBGL5Aha)
